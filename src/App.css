@@ -1,0 +1,72 @@
+.App{
+  padding: 30px;
+}
+
+/*.ant-upload{
+  display: inline-table !important;
+}*/
+
+.editorName,.editorCaption{
+  width: calc(100% - 115px) !important;
+  margin-left: 3px !important;
+}
+
+.editorTime,.editorPrivacy{
+  width: calc(50% - 60px) !important;
+  margin-left: 3px !important;
+  margin-top: 10px !important;
+}
+
+/* you can make up upload button and sample style by using stylesheets */
+
+.ant-upload.ant-upload-select-picture-card{
+  float: left;
+}
+
+.ant-upload-select-picture-card i {
+  font-size: 32px;
+  color: #999;
+}
+
+.ant-upload-select-picture-card .ant-upload-text {
+  margin-top: 8px;
+  color: #666;
+}
+
+/* tile uploaded pictures */
+.upload-list-inline .ant-upload-list-item {
+  float: left;
+  width: 200px;
+  margin-right: 8px;
+}
+.upload-list-inline .ant-upload-animate-enter {
+  animation-name: uploadAnimateInlineIn;
+}
+.upload-list-inline .ant-upload-animate-leave {
+  animation-name: uploadAnimateInlineOut;
+}
+
+.App .hideEditorBtn{
+  display: none;
+  margin: 0.5em auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  .App {
+      padding: 0px;
+  }
+  .editor{
+    margin: 1em 0;
+  }
+  .editorTime,.editorPrivacy{
+    width: calc(100% - 115px) !important;
+    margin-left: 3px !important;
+  }
+  .editorCaption{
+    margin-left: 115px !important;
+  }
+  .App .hideEditorBtn{
+    display: block;
+  }
+}
